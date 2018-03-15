@@ -1,0 +1,17 @@
+﻿{
+  "ConnectionStrings": {
+    "JrsDataConnectionString": "server=occ00dv101;Database=JRS_Data;Integrated Security=true;MultipleActiveResultSets=true"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  },
+  "Tokens": {
+    "Key": "AEFGHytqklu",
+    "Issuer": "localhost",
+    "Audience": "users"
+  }
+
+}
