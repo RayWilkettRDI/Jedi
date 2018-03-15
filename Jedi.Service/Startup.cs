@@ -32,7 +32,7 @@ namespace Jedi.Service
         {
             //services.AddAuthentication(IISDefaults.AuthenticationScheme);
 
-            services.AddDbContext<JediContext>(cfg =>
+            services.AddDbContext<PdmContext>(cfg =>
             {
                 cfg.UseSqlServer(_config.GetConnectionString("PdmConnectionString"));
             });
@@ -45,7 +45,7 @@ namespace Jedi.Service
                 }
             }).AddJsonOptions(opt => opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-            services.AddScoped<IJediRepository, JediRepository>();
+            services.AddScoped<IGsmRepository, GsmRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

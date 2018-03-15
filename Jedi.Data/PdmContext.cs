@@ -10,6 +10,11 @@ namespace Jedi.Data
 {
     public class PdmContext : DbContext
     {
+        public PdmContext(DbContextOptions<PdmContext> options) : base(options)
+        {
+
+        }
+
         public virtual DbSet<AdditiveContainedSourceMl> AdditiveContainedSourceMl { get; set; }
         public virtual DbSet<Additives> Additives { get; set; }
         public virtual DbSet<AdditivesContained> AdditivesContained { get; set; }

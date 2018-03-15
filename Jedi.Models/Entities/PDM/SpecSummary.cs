@@ -74,5 +74,7 @@ namespace Jedi.Models.Entities.PDM
         public bool? IsTemplate { get; set; }
         [Column("fkOriginatingTemplate", TypeName = "char(40)")]
         public string FkOriginatingTemplate { get; set; }
+
+        public SpecSummaryName SpecSummaryName { get; set; }
     }
 }
