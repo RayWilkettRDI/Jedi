@@ -18,5 +18,7 @@ namespace Jedi.Models.Entities.PDM
         public string Instructions { get; set; }
         [Column("langID")]
         public int LangId { get; set; }
+        
+        //public IEnumerable<SpecSummary> SpecSummaries { get; set; }
     }
 }

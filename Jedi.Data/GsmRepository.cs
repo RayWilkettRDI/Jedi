@@ -27,6 +27,7 @@ namespace Jedi.Data
             {
                 return _ctx.SpecSummary
                     .Include(s => s.SpecSummaryName)
+                    .Include(s => s.CommonWorkflowStatus)
                     .Where(s => s.SpecType == specType && s.SpecSummaryName.Name.Contains(specName))
                     .OrderBy(s => s.SpecNum)
                     .ToList();

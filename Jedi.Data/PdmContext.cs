@@ -7693,6 +7693,8 @@ namespace Jedi.Data
                 entity.HasIndex(e => new { e.SpecNum, e.IssueNum })
                     .HasName("PLM4P_SPECSUMMARY");
 
+                //entity.HasOne(e => e.CommonWorkflowStatus).WithMany(e => e.SpecSummaries).HasForeignKey(e => new { e.SpecId, e.LangCreatedIn});
+
                 entity.Property(e => e.Pkid).ValueGeneratedNever();
 
                 entity.Property(e => e.LangCreatedIn).HasDefaultValueSql("(0)");

@@ -10,7 +10,6 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
       "launchUrl": "api/Gsm/?specType=2147&specName=McDonalds",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
