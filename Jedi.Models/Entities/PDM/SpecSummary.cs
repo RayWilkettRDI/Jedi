@@ -74,8 +74,15 @@ namespace Jedi.Models.Entities.PDM
         public bool? IsTemplate { get; set; }
         [Column("fkOriginatingTemplate", TypeName = "char(40)")]
         public string FkOriginatingTemplate { get; set; }
+
         public SpecSummaryName SpecSummaryName { get; set; }
+
         [ForeignKey("SpecStatusId,LangCreatedIn")]
         public CommonWorkflowStatus CommonWorkflowStatus { get; set; }
+
+        [ForeignKey("FkTaxonomyNode")]
+        public CommonSmiltaxonomyNode Taxonomy { get; set; }
+
+        public GsmShortNameMl ShortName { get; set; }
     }
 }

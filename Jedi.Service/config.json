@@ -1,7 +1,8 @@
 ﻿{
   "ConnectionStrings": {
     "JrsDataConnectionString": "server=occ00dv101;Database=JRS_Data;Integrated Security=true;MultipleActiveResultSets=true",
-    "PdmConnectionString": "server=occ00dv101;Database=prodikadb;Integrated Security=false;User ID=svc_plm;Password=rAF8wH4TLTdZUW;MultipleActiveResultSets=true"
+    //"PdmConnectionString": "server=occ00dv101;Database=prodikadb;Integrated Security=false;User ID=svc_plm;Password=rAF8wH4TLTdZUW;MultipleActiveResultSets=true"
+    "PdmConnectionString": "server=PC639;Database=prodikadb;Integrated Security=false;User ID=svc_plm;Password=rAF8wH4TLTdZUW;MultipleActiveResultSets=true"
   },
   "Logging": {
     "LogLevel": {

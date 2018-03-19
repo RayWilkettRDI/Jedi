@@ -2987,6 +2987,7 @@ namespace Jedi.Data
             modelBuilder.Entity<CommonSmiltaxonomyNodeMl>(entity =>
             {
                 entity.HasKey(e => new { e.Pkid, e.LangId });
+                //entity.HasAlternateKey(e => new { e.FkSmiltaxonomyNode, e.LangId });
 
                 entity.HasIndex(e => e.FkSmiltaxonomyNode)
                     .HasName("PLM4P_2142");
@@ -7693,7 +7694,7 @@ namespace Jedi.Data
                 entity.HasIndex(e => new { e.SpecNum, e.IssueNum })
                     .HasName("PLM4P_SPECSUMMARY");
 
-                //entity.HasOne(e => e.CommonWorkflowStatus).WithMany(e => e.SpecSummaries).HasForeignKey(e => new { e.SpecId, e.LangCreatedIn});
+                //entity.HasOne(e => e.Taxonomy).WithMany().HasForeignKey(e => new { e.FkTaxonomyNode, e.LangCreatedIn });
 
                 entity.Property(e => e.Pkid).ValueGeneratedNever();
 

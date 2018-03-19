@@ -11,6 +11,7 @@ namespace Jedi.Models.Entities.PDM
         [Column("pkid", TypeName = "char(40)")]
         public string Pkid { get; set; }
         [Column("fkSMILTaxonomyNode", TypeName = "char(40)")]
+        [Required]
         public string FkSmiltaxonomyNode { get; set; }
         [StringLength(150)]
         public string Name { get; set; }
@@ -18,5 +19,7 @@ namespace Jedi.Models.Entities.PDM
         public string Alias { get; set; }
         [Column("langID")]
         public int LangId { get; set; }
+        [ForeignKey("FkSmiltaxonomyNode")]
+        public CommonSmiltaxonomyNode GetCommonSmiltaxonomyNode { get; set; }
     }
 }

@@ -26,5 +26,19 @@ namespace Jedi.Service.Controllers
         {
             return Ok(_repo.GetSpecSummariesBySpecName(specType, specName));
         }
+
+        [HttpGet("specType/{specType}/{status}")]
+        public IActionResult GetBySpecType(int specType, string status)
+        {
+            return Ok(_repo.GetSpecSummariesBySpecType(specType, status));
+        }
+
+        [HttpGet("{specNum}/{issueNum}")]
+        public IActionResult Get(string specNum, string issueNum)
+        {
+            return Ok(_repo.GetSpec(specNum, issueNum));
+        }
+
+       
     }
 }
