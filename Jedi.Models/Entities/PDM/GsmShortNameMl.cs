@@ -16,5 +16,8 @@ namespace Jedi.Models.Entities.PDM
         public int LangId { get; set; }
         [StringLength(256)]
         public string Name { get; set; }
+
+        [ForeignKey("FkSpecSummary")]
+        public SpecSummary SpecSummary { get; set; }
     }
 }

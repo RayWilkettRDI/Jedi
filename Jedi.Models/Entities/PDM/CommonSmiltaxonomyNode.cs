@@ -20,5 +20,7 @@ namespace Jedi.Models.Entities.PDM
         [Column("ExternalID")]
         [StringLength(200)]
         public string ExternalId { get; set; }
+
+        public CommonSmiltaxonomyNodeMl CommonSmiltaxonomyNodeMl { get; set; }
     }
 }
