@@ -19,7 +19,9 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Entities\PDM\Gsm\" />
+    <Folder Include="Entities\PDM\Eq\" />
+    <Folder Include="Entities\PDM\Wfa\" />
+    <Folder Include="Entities\PDM\Npd\" />
   </ItemGroup>
 
 </Project>
