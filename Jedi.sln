@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jedi", "Jedi\Jedi.csproj", "{EC388EE0-74CA-48ED-9956-93EDF9C2250F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jedi.Service", "Jedi.Service\Jedi.Service.csproj", "{220F70EE-0ABE-4612-9A37-384BC8EECA79}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jedi.Data", "Jedi.Data\Jedi.Data.csproj", "{45CA75D0-BE4D-48F7-9BA8-5395344EAF18}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC388EE0-74CA-48ED-9956-93EDF9C2250F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC388EE0-74CA-48ED-9956-93EDF9C2250F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC388EE0-74CA-48ED-9956-93EDF9C2250F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC388EE0-74CA-48ED-9956-93EDF9C2250F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{220F70EE-0ABE-4612-9A37-384BC8EECA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{220F70EE-0ABE-4612-9A37-384BC8EECA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{220F70EE-0ABE-4612-9A37-384BC8EECA79}.Release|Any CPU.ActiveCfg = Release|Any CPU

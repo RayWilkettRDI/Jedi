@@ -33,7 +33,7 @@ namespace Jedi.Service.Controllers
             return Ok(_repo.GetSpecSummariesBySpecType(specType, status));
         }
 
-        [HttpGet("{specNum}/{issueNum}")]
+        [HttpGet("specNum/{specNum}/issueNum/{issueNum}")]
         public IActionResult Get(string specNum, string issueNum)
         {
             return Ok(_repo.GetSpec(specNum, issueNum));
