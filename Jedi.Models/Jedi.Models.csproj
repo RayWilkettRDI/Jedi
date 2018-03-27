@@ -19,9 +19,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Entities\PDM\Eq\" />
-    <Folder Include="Entities\PDM\Wfa\" />
-    <Folder Include="Entities\PDM\Npd\" />
+    <Folder Include="Entities\PDM\Admn\Pqm\" />
   </ItemGroup>
 
 </Project>
