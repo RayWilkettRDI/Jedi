@@ -1,6 +1,35 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Jedi.Models.Entities.PDM.Admn.Audit;
+using Jedi.Models.Entities.PDM.Admn.Common;
+using Jedi.Models.Entities.PDM.Admn.CustomData;
+using Jedi.Models.Entities.PDM.Admn.Global;
+using Jedi.Models.Entities.PDM.Admn.Plm;
+using Jedi.Models.Entities.PDM.Admn.Pqs;
+using Jedi.Models.Entities.PDM.Admn.Ugm;
+using Jedi.Models.Entities.PDM.Admn.Uom;
+using Jedi.Models.Entities.PDM.Cacs;
+using Jedi.Models.Entities.PDM.Css;
+using Jedi.Models.Entities.PDM.Drl;
+using Jedi.Models.Entities.PDM.Eq;
+using Jedi.Models.Entities.PDM.Global;
+using Jedi.Models.Entities.PDM.Gsm;
+using Jedi.Models.Entities.PDM.Gsm.Common;
+using Jedi.Models.Entities.PDM.Gsm.Compliance;
+using Jedi.Models.Entities.PDM.Gsm.ComponentCatalog;
+using Jedi.Models.Entities.PDM.Gsm.FinishedProduct;
+using Jedi.Models.Entities.PDM.Gsm.FoodService;
+using Jedi.Models.Entities.PDM.Gsm.Formulation;
+using Jedi.Models.Entities.PDM.Gsm.Lio;
+using Jedi.Models.Entities.PDM.Gsm.NutrientProfile;
+using Jedi.Models.Entities.PDM.Gsm.Specifications;
+using Jedi.Models.Entities.PDM.Gsm.TestingProtocol;
+using Jedi.Models.Entities.PDM.Npd;
+using Jedi.Models.Entities.PDM.Nsm;
+using Jedi.Models.Entities.PDM.Scrm;
+using Jedi.Models.Entities.PDM.Wfa;
+
 
 namespace Jedi.Models.Entities.PDM
 {

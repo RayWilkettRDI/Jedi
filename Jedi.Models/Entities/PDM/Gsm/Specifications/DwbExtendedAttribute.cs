@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Jedi.Models.Entities.PDM.Gsm.Specifications
 {
     [Table("dwbExtendedAttribute")]
-    public partial class DwbExtendedAttribute.Dwb
+    public partial class DwbExtendedAttribute
     {
         [Key]
         [Column("pkid", TypeName = "char(40)")]

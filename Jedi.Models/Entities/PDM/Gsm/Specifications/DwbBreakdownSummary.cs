@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Jedi.Models.Entities.PDM.Dwb.Gsm.Specifications
+namespace Jedi.Models.Entities.PDM.Gsm.Specifications
 {
     [Table("dwbBreakdownSummary")]
     public partial class DwbBreakdownSummary

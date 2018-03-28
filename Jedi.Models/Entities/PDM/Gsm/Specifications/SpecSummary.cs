@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Jedi.Models.Entities.PDM.Gsm.Common;
 
 namespace Jedi.Models.Entities.PDM.Gsm.Specifications
 {

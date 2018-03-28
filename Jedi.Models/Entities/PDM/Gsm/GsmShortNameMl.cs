@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Jedi.Models.Entities.PDM.Gsm
+namespace Jedi.Models.Entities.PDM.Gsm.Specifications
 {
     [Table("gsmShortNameML")]
     public partial class GsmShortNameMl

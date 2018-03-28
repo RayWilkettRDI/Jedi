@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using Jedi.Models.Entities.PDM;
+using Jedi.Models.Entities.PDM.Gsm.Specifications;
+
 
 namespace Jedi.Data
 {
