@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Jedi.Models.Entities.PDM.Gsm.Specifications;
+using Jedi.Models.Entities.PDM.Gsm.Common;
 
 namespace Jedi.Data
 {
@@ -90,6 +91,21 @@ namespace Jedi.Data
                 "SubCategory",
                 "Group"
             };
+        }
+
+        public IEnumerable<CommonWorkflowStatus> GetWorkflowStatuses(int langid)
+        {
+            try
+            {
+                return _ctx.CommonWorkflowStatus
+                    .Where(s => s.LangId == langid)
+                    .ToList();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Failed to get Workflow Statuses {ex}");
+                return null;
+            }
         }
     }
 }

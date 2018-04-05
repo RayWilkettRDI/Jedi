@@ -814,6 +814,7 @@ namespace Jedi.Data
         public virtual DbSet<SpSupplierReps> SpSupplierReps { get; set; }
         public virtual DbSet<States> States { get; set; }
         public virtual DbSet<SupplierInitiatedQuestionaire> SupplierInitiatedQuestionaire { get; set; }
+        public virtual DbSet<SupportedLanguages> SupportedLanguages { get; set; }
         public virtual DbSet<SupportingDocuments> SupportingDocuments { get; set; }
         public virtual DbSet<TableRenameLookup> TableRenameLookup { get; set; }
         public virtual DbSet<TargetMarket> TargetMarket { get; set; }
@@ -7868,6 +7869,11 @@ namespace Jedi.Data
                     .HasName("PLM4P_5005");
 
                 entity.Property(e => e.Pkid).ValueGeneratedNever();
+            });
+
+            modelBuilder.Entity<SupportedLanguages>(entity =>
+            {
+                entity.HasKey(e => e.LangId);
             });
 
             modelBuilder.Entity<SupportingDocuments>(entity =>

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jedi.Data", "Jedi.Data\Jedi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jedi.Models", "Jedi.Models\Jedi.Models.csproj", "{D1E7ED97-2C09-45A6-9672-C967EC606ABC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Web", "Jedi.Web\Jedi.Web.csproj", "{0466C4C7-2A8D-4C08-8F38-10035C0A78EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D1E7ED97-2C09-45A6-9672-C967EC606ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1E7ED97-2C09-45A6-9672-C967EC606ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E7ED97-2C09-45A6-9672-C967EC606ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0466C4C7-2A8D-4C08-8F38-10035C0A78EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0466C4C7-2A8D-4C08-8F38-10035C0A78EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0466C4C7-2A8D-4C08-8F38-10035C0A78EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0466C4C7-2A8D-4C08-8F38-10035C0A78EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

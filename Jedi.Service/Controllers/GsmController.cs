@@ -39,6 +39,12 @@ namespace Jedi.Service.Controllers
             return Ok(_repo.GetSpec(specNum, issueNum));
         }
 
+        [HttpGet("workflowstatuses/{langid}")]
+        public IActionResult GetWorkFlowStatuses(int langid)
+        {
+            return Ok(_repo.GetWorkflowStatuses(langid));
+        }
+
        
     }
 }
