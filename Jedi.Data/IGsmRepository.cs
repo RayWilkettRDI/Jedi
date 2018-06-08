@@ -12,6 +12,7 @@ namespace Jedi.Data
         SpecSummary GetSpec(string specNum, string issueNum);
         IEnumerable<SpecSummary> GetSpecSummariesBySpecName(int specType, string specName);
         IEnumerable<SpecSummary> GetSpecSummariesBySpecType(int specType, string status);
+        IEnumerable<SpecSummary> GetSpecSummariesBySpecType(int specType);
         IEnumerable<CommonWorkflowStatus> GetWorkflowStatuses(int langid);
     }
 }

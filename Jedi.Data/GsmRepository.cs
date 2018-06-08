@@ -64,6 +64,26 @@ namespace Jedi.Data
             }
         }
 
+        public IEnumerable<SpecSummary> GetSpecSummariesBySpecType(int specType)
+        {
+            try
+            {
+                return _ctx.SpecSummary
+                    .Include(s => s.SpecSummaryName)
+                    .Include(s => s.ShortName)
+                    .Include(s => s.CommonWorkflowStatus)
+                    .Include(s => s.Taxonomy.CommonSmiltaxonomyNodeMl)
+                    .Where(s => s.SpecType == specType)
+                    .OrderBy(s => s.SpecNum)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Failed to get SpecSummary by specType and specName {ex}");
+                return null;
+            }
+        }
+
         public SpecSummary GetSpec(string specNum, string issueNum)
         {
             try
