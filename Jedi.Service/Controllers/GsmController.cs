@@ -51,6 +51,12 @@ namespace Jedi.Service.Controllers
             return Ok(_repo.GetWorkflowStatuses(langid));
         }
 
+        [HttpGet("finishedProducts")]
+        public IActionResult GetFinishedProducts()
+        {
+            return Ok();
+        }
+
        
     }
 }
